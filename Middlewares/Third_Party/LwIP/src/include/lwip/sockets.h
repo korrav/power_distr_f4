@@ -310,10 +310,10 @@ typedef struct ip_mreq {
 #endif
 
 #if LWIP_TIMEVAL_PRIVATE
-//struct timeval {
-//  long    tv_sec;         /* seconds */
-//  long    tv_usec;        /* and microseconds */
-//};
+struct timeval {
+  long    tv_sec;         /* seconds */
+  long    tv_usec;        /* and microseconds */
+};
 #endif /* LWIP_TIMEVAL_PRIVATE */
 
 void lwip_socket_init(void);
